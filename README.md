@@ -110,6 +110,9 @@ Reserve network address (192.168.0.160) and broadcast address (192.168.0.167) <b
 
 Available range: 192.168.0.161 – 192.168.0.166 /29 <br/></br>
 
+
+
+
 <h3>Design</h3>
 Once I created the subnets, I could design the network via Packet Tracer.
 
@@ -134,6 +137,8 @@ Topology: Mesh<br/>
 Scope: 192.168.0.1 - 192.168.0.126 /25 <br/>
 Subnet Mask: 255.255.255.128 <br/>
 This subnet consists of a wireless router and despite showing four end devices, it will allow for up to 126 wireless devices to connect to Wi-Fi, fulfilling the requirement of 72 customer devices. The wireless router cannot communicate with Subnet A or B to increase security for Subnet A and B.<br/>
+
+
 
 <h3>Configuration</h3>
 I connected all devices with a combination of straight-through and crossover copper ethernet cables. I then configured all devices as shown below... <br/><br/>
@@ -162,6 +167,8 @@ Demonstrating successful communication to gateway<br/><br/>
 
 ![averify3](suba6.jpg) <br/><br/>
 
+
+
 <b>Subnet B</b><br/>
 All devices (desktop machines) in this subnet were also configured with static IPs. This is important for organisational structure and security.<br/><br/>
 
@@ -176,44 +183,14 @@ Next, I configured the end devices in Subnet B with their IPv4 address and subne
 
 ![ATable2](addresstable2.jpg) <br/><br/>
 
+To verify connectivity, I sent ping requests to and from the gateway and devices...<br/><br/>
+
+![bverify1](subb4.jpg) <br/>
+Starting with the gateway, just like with Subnet A, two ping requests needed to be sent to each device before ARP data was acquired and all packets can be successfully received. This was replicated for all devices in Subnet B with success.<br/><br/>
+
+![bverify2](subb5.jpg) <br/>
+Demonstrating successful communication to gateway<br/><br/>
+
+![bverify3](subb6.jpg) <br/><br/>
 
 
-
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
