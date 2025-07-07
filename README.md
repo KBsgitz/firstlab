@@ -136,9 +136,22 @@ Subnet Mask: 255.255.255.128 <br/>
 This subnet consists of a wireless router and despite showing four end devices, it will allow for up to 126 wireless devices to connect to Wi-Fi, fulfilling the requirement of 72 customer devices. The wireless router cannot communicate with Subnet A or B to increase security for Subnet A and B.<br/>
 
 <h3>Configuration</h3>
-I connected all devices with a combination of straight-through and crossover copper ethernet cables. I then configured all devices as shown below. <br/>
+I connected all devices with a combination of straight-through and crossover copper ethernet cables. I then configured all devices as shown below... <br/><br/>
 
+<b>Subnet A</b><br/>
+All devices within this subnet were configured with static IPs. Both servers and printers in a business setting are constantly required for basic job functionality and servers must always be online and stable as they are holding important and sensitive data. <br/><br/>
 
+![gateway](suba1.jpg) <br/>
+
+The router was connected to Subnet A via interface 0/0/0. I assigned this interface its IP; the first within the scope of Subnet A and subnet mask. <br/>
+
+![endgateway](suba2.jpg) <br/>
+
+Next, I configured the end devices in Subnet A to point to the default gateway. Here I am showing Printer0 specifically, but this was replicated on all end devices. <br/>
+
+![deviceassign](suba3.jpg) <br/>
+
+Next, I configured the end devices in Subnet A with their IPv4 address and subnet mask. This shows Printer0 where I configured it to have the next available IP. I continued this process with the other devices. <br/>
 
 
 
