@@ -200,3 +200,19 @@ Demonstrating successful communication to gateway<br/><br/>
 ![gassign](subc1.JPG) <br/>
 I assigned the Wireless Router with the first IP out of the scope, along with the correct subnet mask. I also enabled DHCP settings, ensuring that all devices were to be given dynamic IPs. The pool started from the next available IP and I specified that the maximum number of users is 125 (factoring in the router).<br/><br/>
 
+![wsett](subc2.JPG) <br/>
+I changed the SSID name to ‘Guest’, using 2.4Ghz. I kept the other default settings as they are appropriate.<br/><br/>
+
+![wsec](subc3.JPG) <br/>
+I configured the Wireless Router to use WPA2 Personal – deciding against WPA2 Enterprise, as this subnet is already isolated from the rest of the network and Enterprise would be unnecessary for customer purposes. I set a secure password via AES.<br/><br/>
+
+![apass](subc4.JPG) <br/>
+I changed the default admin password to something longer and secure.<br/><br/>
+
+![deviceassign](subc5.JPG) <br/>
+Next I connected the devices. I navigated to the wireless interface and turned it on. I then entered the ‘Guest’ SSID, selected WPA2-PSK and entered the secure password. I then selected the DHCP settings. As the screenshot demonstrates, this device was allocated an IP out of the pool and shows the correct subnet mask. I repeated these steps with the three other present wireless devices.<br/><br/>
+
+![cverify1](subc6.JPG) <br/>
+To verify the connection, I sent a ping request to the wireless router from one of the wireless devices. Successful response.<br/><br/>
+
+![cverify2](subc7.JPG) <br/>
