@@ -191,6 +191,12 @@ Starting with the gateway, just like with Subnet A, two ping requests needed to 
 ![bverify2](subb5.jpg) <br/>
 Demonstrating successful communication to gateway<br/><br/>
 
-![bverify3](subb6.jpg) <br/><br/>
+![bverify3](subb6.JPG) <br/><br/>
 
+
+
+<b>Subnet C</b><br/>
+
+![gassign](subc1.JPG) <br/>
+I assigned the Wireless Router with the first IP out of the scope, along with the correct subnet mask. I also enabled DHCP settings, ensuring that all devices were to be given dynamic IPs. The pool started from the next available IP and I specified that the maximum number of users is 125 (factoring in the router).<br/><br/>
 
