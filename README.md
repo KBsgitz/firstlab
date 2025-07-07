@@ -212,7 +212,8 @@ I changed the default admin password to something longer and secure.<br/><br/>
 ![deviceassign](subc5.JPG) <br/>
 Next I connected the devices. I navigated to the wireless interface and turned it on. I then entered the ‘Guest’ SSID, selected WPA2-PSK and entered the secure password. I then selected the DHCP settings. As the screenshot demonstrates, this device was allocated an IP out of the pool and shows the correct subnet mask. I repeated these steps with the three other present wireless devices.<br/><br/>
 
-![cverify1](subc6.JPG) <br/>
+![cverify1](subc6.jpg) <br/>
 To verify the connection, I sent a ping request to the wireless router from one of the wireless devices. Successful response.<br/><br/>
 
 ![cverify2](subc7.JPG) <br/>
+
