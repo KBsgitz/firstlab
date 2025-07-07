@@ -215,5 +215,7 @@ Next I connected the devices. I navigated to the wireless interface and turned i
 ![cverify1](subc6.jpg) <br/>
 To verify the connection, I sent a ping request to the wireless router from one of the wireless devices. Successful response.<br/><br/>
 
-![cverify2](subc7.JPG) <br/>
+![cverify2](subc7.JPG) <br/><br/>
+
+![complete](lancomplete.jpg) <br/><br/>
 
