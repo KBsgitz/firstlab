@@ -110,9 +110,33 @@ Reserve network address (192.168.0.160) and broadcast address (192.168.0.167) <b
 
 Available range: 192.168.0.161 – 192.168.0.166 /29 <br/></br>
 
-<h3>Design</h3><br/>
+<h3>Design</h3>
 Once I created the subnets, I could design the network via Packet Tracer.
 
+![Design](landesign.jpg) <br/>
+
+This screenshot displays my design. I colour-coded and labelled each subnet: Subnet A (grey), Subnet B (yellow) and Subnet C (green), all labelled with each network address and range/scope which I had already found via subnetting. <br/>
+
+<b>Subnet A</b><br/>
+Topology: Star <br/>
+Scope: 192.168.0.161 – 192.168.0.166 /29<br/>
+Subnet Mask: 255.255.255.248 <br/>
+This subnet consists of two servers and two printers which will each be connected to the switch (Switch0) and this switch will then be connected to the router (R0) which is the gateway router, allowing communication to Subnet B.<br/>
+
+<b>Subnet B</b><br/>
+Topology: Star<br/>
+Scope: 192.168.0.129 - 192.168.0.158 /27<br/>
+Subnet Mask: 255.255.255.224<br/>
+This subnet consists of fourteen desktop PCs. Each PC will be connected to the switch (Switch1). This switch will be connected to the router (R0) which is the gateway router, allowing communication to Subnet A.<br/>
+
+<b>Subnet C</b><br/>
+Topology: Mesh<br/>
+Scope: 192.168.0.1 - 192.168.0.126 /25 <br/>
+Subnet Mask: 255.255.255.128 <br/>
+This subnet consists of a wireless router and despite showing four end devices, it will allow for up to 126 wireless devices to connect to Wi-Fi, fulfilling the requirement of 72 customer devices. The wireless router cannot communicate with Subnet A or B to increase security for Subnet A and B.<br/>
+
+<h3>Configuration</h3>
+I connected all devices with a combination of straight-through and crossover copper ethernet cables. I then configured all devices as shown below. <br/>
 
 
 
