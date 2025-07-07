@@ -142,16 +142,39 @@ I connected all devices with a combination of straight-through and crossover cop
 All devices within this subnet were configured with static IPs. Both servers and printers in a business setting are constantly required for basic job functionality and servers must always be online and stable as they are holding important and sensitive data. <br/><br/>
 
 ![gateway](suba1.jpg) <br/>
-
-The router was connected to Subnet A via interface 0/0/0. I assigned this interface its IP; the first within the scope of Subnet A and subnet mask. <br/>
+The router was connected to Subnet A via interface 0/0/0. I assigned this interface its IP; the first within the scope of Subnet A and subnet mask. <br/><br/>
 
 ![endgateway](suba2.jpg) <br/>
-
-Next, I configured the end devices in Subnet A to point to the default gateway. Here I am showing Printer0 specifically, but this was replicated on all end devices. <br/>
+Next, I configured the end devices in Subnet A to point to the default gateway. Here I am showing Printer0 specifically, but this was replicated on all end devices. <br/><br/>
 
 ![deviceassign](suba3.jpg) <br/>
+Next, I configured the end devices in Subnet A with their IPv4 address and subnet mask. This shows Printer0 where I configured it to have the next available IP. I continued this process with the other devices. <br/><br/>
 
-Next, I configured the end devices in Subnet A with their IPv4 address and subnet mask. This shows Printer0 where I configured it to have the next available IP. I continued this process with the other devices. <br/>
+![ATable1](addresstable1.jpg) <br/><br/>
+
+To verify connectivity, I sent ping requests to and from the gateway and devices... <br/><br/>
+
+![averify1](suba4.jpg) <br/>
+Starting with the gateway, I had to come out of configuration mode by ‘exit’-ing twice. I then sent a ping request to Printer0. It only returned 80%. This is due to the fact that the device needs to go through the process of being recognised by the gateway first (ARP request). Once that ARP data was received via the first ping, the second ping returned with a complete success rate. This was replicated for all devices in Subnet A with success.<br/><br/>
+
+![averify2](suba5.jpg) <br/>
+Demonstrating successful communication to gateway<br/><br/>
+
+![averify3](suba6.jpg) <br/><br/>
+
+<b>Subnet B</b><br/>
+All devices (desktop machines) in this subnet were also configured with static IPs. This is important for organisational structure and security.<br/><br/>
+
+![gateway](subb1.jpg) <br/>
+The router was connected to Subnet B via interface 0/0/1. I assigned this interface its IP; the first within the scope of Subnet B, and subnet mask, and turned it on. This router also acts as the default gateway for this subnet.<br/><br/>
+
+![endgateway](subb2.jpg) <br/>
+Next, I configured the end devices in Subnet B to point to the default gateway. Here I am showing PC0 specifically, but this was replicated on all end devices.<br/><br/>
+
+![deviceassign](subb3.jpg) <br/>
+Next, I configured the end devices in Subnet B with their IPv4 address and subnet mask. This shows PC0 where I configured it to have the next available IP. I continued this process with the other devices. <br/><br/>
+
+![ATable2](addresstable2.jpg) <br/><br/>
 
 
 
