@@ -34,7 +34,7 @@ First, the subnet mask needs to be converted to binary. The CIDR notation of '/2
 
 The 1's represent the network bits, with the 0's representing the host bits. I am going to use a table to 'save' bits from the host and convert the rest to the network, to allow for 72 hosts on subnet C. <br/>
 
-
+![Table](Subnet Table 1.jpg)
 
 
 
